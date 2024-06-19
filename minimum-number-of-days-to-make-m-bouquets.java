@@ -2,6 +2,7 @@ class Solution {
     public int minDays(int[] bloomDay, int m, int k) {
         int mid=-1;
         if((long)m*k>bloomDay.length) return mid;
+        
         int min=Arrays.stream(bloomDay)
                         .min()
                         .getAsInt();
